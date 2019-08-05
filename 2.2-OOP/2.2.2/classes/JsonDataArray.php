@@ -29,8 +29,8 @@ class JsonDataArray
 
     public function load()
     {
-        $this->dataTitle = $this->file->readJson()->dataTitle;
-        $this->dataArray = (array)$this->file->readJson()->dataArray;
+        $this->dataTitle = json_decode($this->file->read())->dataTitle;
+        $this->dataArray = (array)json_decode($this->file->read())->dataArray;
         $this->newQuery();
     }
 
@@ -252,6 +252,9 @@ class JsonDataArray
 
     public function orderBy($param, $direction_forward = self::SORT_DIRECTION_FORWARD)
     {
+        if ($this->dataArray == []) {
+            return $this;
+        }
         $param_type = $this->identifyParamType($param);
         if ($param_type === self::PARAM_TYPE_NUMERIC || $param_type === self::PARAM_TYPE_STRING) {
             if ($param_type === self::PARAM_TYPE_NUMERIC) {
