@@ -1,0 +1,30 @@
+[
+  {
+    "id": "selfexport",
+    "description": "Скидка 10% (самовывоз)",
+    "value": 10,
+    "value_type": "percent",
+    "operator": "-"
+  },
+  {
+    "id": "tips",
+    "description": "Чаевые 10%",
+    "value": 10,
+    "value_type": "percent",
+    "operator": "+"
+  },
+  {
+    "id": "delivery",
+    "description": "Доставка",
+    "value": 200,
+    "value_type": "currency",
+    "operator": "+"
+  },
+  {
+    "id": "selfcatering",
+    "description": "Самообслуживание в кафе",
+    "value": 0,
+    "value_type": "currency",
+    "operator": "+"
+  }
+]

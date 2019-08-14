@@ -5,8 +5,6 @@
  * @uses TASK_DOMAIN constant with site location
  * @uses $content variable with page html-code
  */
-
-$menu = $data['menu'];
 ?>
 <!DOCTYPE html>
 <html lang="en">

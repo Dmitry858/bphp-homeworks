@@ -34,19 +34,19 @@ $menu = $data['menu'];
             <div class="row">
                 <div class="col-10 offset-1">
                     <div class="form-group">
-                        <input name="service" type="radio" id="service_1" value="1">
+                        <input name="service" type="radio" id="service_1" value="delivery">
                         <label for="service_1">Доставка (200.00 ₽)</label>
                     </div>
                     <div class="form-group">
-                        <input name="service" type="radio" id="service_2" value="2">
+                        <input name="service" type="radio" id="service_2" value="selfexport">
                         <label for="service_2">Самовывоз (скидка 10%)</label>
                     </div>
                     <div class="form-group">
-                        <input name="service" type="radio" id="service_3" value="3" checked="checked">
+                        <input name="service" type="radio" id="service_3" value="selfcatering" checked="checked">
                         <label for="service_3">Самообслуживание в кафе</label>
                     </div>
                     <div class="form-group">
-                        <input name="service" type="radio" id="service_4" value="4">
+                        <input name="service" type="radio" id="service_4" value="tips">
                         <label for="service_4">Официант в кафе (чаевые 10%)</label>
                     </div>
                 </div>
